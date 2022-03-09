@@ -1,0 +1,55 @@
+header {
+	background-color: gray;
+}
+.imagen-principal {
+	border-radius: 100%;
+}
+.color-borde {
+	border-color: white;
+}
+.color {
+	background-color: gray;
+}
+li {
+	a {
+		&:hover {
+			color: white;
+			font-size: 1.8rem;
+		}
+	}
+}
+footer {
+	background-color: gray;
+}
+h1 {
+	&:hover {
+		font-size: 4rem;
+		color: grey;
+		transition: 0.5s;
+	}
+}
+p {
+	&:hover {
+		color: grey;
+		transition: 0s;
+	}
+}
+@media only screen and (max-width: 420px) {/*vista movil*/
+	header {
+		div {
+			a {
+				display: none;
+			}
+		}
+	}
+	nav {
+		justify-content: center;
+	}
+	section {
+		div {
+			img {
+				display: none;
+			}
+		}
+	}
+}
