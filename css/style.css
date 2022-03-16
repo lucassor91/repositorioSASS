@@ -19,11 +19,11 @@ footer {
 
 h1:hover {
   font-size: 4rem;
-  color: grey;
+  color: gray;
   transition: 0.5s; }
 
 p:hover {
-  color: grey;
+  color: gray;
   transition: 0s; }
 
 @media only screen and (max-width: 420px) {
@@ -34,3 +34,11 @@ p:hover {
     justify-content: center; }
   section div img {
     display: none; } }
+
+.redes, .redes:hover {
+  height: 60px;
+  width: 60px; }
+
+.redes:hover {
+  background-color: white;
+  transition: 0.5s; }

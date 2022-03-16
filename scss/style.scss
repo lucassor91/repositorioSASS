@@ -1,5 +1,10 @@
+$stilos: (
+	colorPrincipal: gray
+);
+
+
 header {
-	background-color: gray;
+	background-color: map-get($stilos, colorPrincipal);
 }
 .imagen-principal {
 	border-radius: 100%;
@@ -8,7 +13,7 @@ header {
 	border-color: white;
 }
 .color {
-	background-color: gray;
+	background-color: map-get($stilos, colorPrincipal);
 }
 li {
 	a {
@@ -19,18 +24,18 @@ li {
 	}
 }
 footer {
-	background-color: gray;
+	background-color: map-get($stilos, colorPrincipal);
 }
 h1 {
 	&:hover {
 		font-size: 4rem;
-		color: grey;
+		color: map-get($stilos, colorPrincipal);
 		transition: 0.5s;
 	}
 }
 p {
 	&:hover {
-		color: grey;
+		color: map-get($stilos, colorPrincipal);
 		transition: 0s;
 	}
 }
@@ -53,3 +58,22 @@ p {
 		}
 	}
 }
+
+@mixin tamaño($width, $height){
+	height: $height;
+	width: $width;
+ }
+
+.redes{
+	@include tamaño(60px, 60px)	
+}
+
+.redes:hover{
+	 @extend .redes;
+	 background-color: white;
+	 transition: 0.5s;
+}
+
+
+	 
+ 
