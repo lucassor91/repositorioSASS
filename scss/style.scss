@@ -33,6 +33,15 @@ h1 {
 		transition: 0.5s;
 	}
 }
+
+h2 {
+	&:hover {
+		font-size: 4rem;
+		color: map-get($stilos, colorPrincipal);
+		transition: 0.5s;
+	}
+}
+
 p {
 	&:hover {
 		color: map-get($stilos, colorPrincipal);
@@ -74,6 +83,9 @@ p {
 	 transition: 0.5s;
 }
 
-
-	 
- 
+.imagen__Pagos{
+	@include tamaño(90px, 90px)	
+    margin: auto;
+    padding: 2px;
+    display: block;
+}

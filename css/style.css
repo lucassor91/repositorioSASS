@@ -22,6 +22,11 @@ h1:hover {
   color: gray;
   transition: 0.5s; }
 
+h2:hover {
+  font-size: 4rem;
+  color: gray;
+  transition: 0.5s; }
+
 p:hover {
   color: gray;
   transition: 0s; }
@@ -42,3 +47,10 @@ p:hover {
 .redes:hover {
   background-color: white;
   transition: 0.5s; }
+
+.imagen__Pagos {
+  height: 90px;
+  width: 90px;
+  margin: auto;
+  padding: 2px;
+  display: block; }
