@@ -65,3 +65,38 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert ( animalesenadopcion [i])
             }
         }, false);
+
+//EVENTOS
+        class gatitos{
+            constructor(id,nombre, edad){
+                this.id = id;
+                this.nombre = nombre;
+                this.edad = precio;
+                
+            }
+        }
+        const productos = [];
+        productos.push(new Producto(1,'Gatito / Juan / 3 kg', 12));
+
+
+
+        for (const producto of productos) {
+            let div = document.createElement("div");
+            div.innerHTML = `<img src="gatito 2.jpg" class="img-thumbnail card-img-top gatitos" alt="...">
+                            <div class="card-body gatitos">
+                            <p class="card-text gatitos">Gatito de 3 meses, desparasitado y vacundo</p>
+                            <a href="#" class="btn btn-primary gatitos" id="1">Adoptar</a>`;
+            document.body.appendChild(div);
+        }
+
+
+        function adoptarItem(){
+            let btnadoptar = document.getElementsByClassName('btn btn-primary');
+            for (const boton of btnadoptar) {
+                boton.onclick = (e) => {
+                    const seleccionado = productos.find(obj => obj.id == e.target.id);
+                    alert("Adoptaste El Gatito")
+                }
+            }
+        }
+        adoptarItem()
