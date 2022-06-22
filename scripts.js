@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }, false);
 
-//EVENTOS
+EVENTOS
         class gatitos{
             constructor(id,nombre, edad){
                 this.id = id;
@@ -75,12 +75,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 
             }
         }
-        const productos = [];
-        productos.push(new Producto(1,'Gatito / Juan / 3 kg', 12));
+        const gatitos = [];
+        Aniamles.push && new Animal(1,'Gatito / Juan / 3 kg', 12);//AND
 
 
 
-        for (const producto of productos) {
+        for (const Animal of gatitos) {
             let div = document.createElement("div");
             div.innerHTML = `<img src="gatito 2.jpg" class="img-thumbnail card-img-top gatitos" alt="...">
                             <div class="card-body gatitos">
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
             let btnadoptar = document.getElementsByClassName('btn btn-primary');
             for (const boton of btnadoptar) {
                 boton.onclick = (e) => {
-                    const seleccionado = productos.find(obj => obj.id == e.target.id);
+                    const seleccionado = gatitos.find(obj => obj.id == e.target.id);
                     alert("Adoptaste El Gatito")
                 }
             }
